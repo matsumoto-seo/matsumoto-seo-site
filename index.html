@@ -5,29 +5,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松本知巳 | SEOコンサルタント</title>
   <meta name="description" content="松本知巳のプロフィール・実績概要。SEO設計、コンテンツ改善、Web集客改善。">
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --sub: #666666;
+      --line: #e5e5e5;
+      --accent: #222222;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 56px 20px 80px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 40px 32px;
+      margin-bottom: 24px;
+    }
+
+    .name {
+      margin: 0 0 10px;
+      font-size: 40px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+    }
+
+    .title {
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: var(--sub);
+    }
+
+    .lead {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 28px 24px;
+    }
+
+    .card-wide {
+      grid-column: 1 / -1;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 24px;
+      line-height: 1.4;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2em;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .small {
+      color: var(--sub);
+      font-size: 14px;
+    }
+
+    .contact {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: var(--sub);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 740px) {
+      .wrap {
+        padding: 28px 14px 56px;
+      }
+
+      .hero,
+      .card {
+        padding: 24px 18px;
+      }
+
+      .name {
+        font-size: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .card-wide {
+        grid-column: auto;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>松本 知巳</h1>
-  <p>SEOコンサルタント</p>
+  <main class="wrap">
+    <section class="hero">
+      <h1 class="name">松本 知巳</h1>
+      <p class="title">SEOコンサルタント</p>
+      <p class="lead">
+        SEO設計、コンテンツ改善、Web集客改善を中心に、
+        広告依存の集客構造の見直しや、検索流入から問い合わせ導線までの改善支援を行っています。
+      </p>
+    </section>
 
-  <h2>対応内容</h2>
-  <ul>
-    <li>SEO設計</li>
-    <li>コンテンツ改善</li>
-    <li>Web集客改善</li>
-  </ul>
+    <section class="grid">
+      <section class="card">
+        <h2>対応内容</h2>
+        <ul>
+          <li>SEO設計</li>
+          <li>コンテンツ改善</li>
+          <li>Web集客改善</li>
+          <li>問い合わせ導線改善</li>
+        </ul>
+      </section>
 
-  <h2>実績概要</h2>
-  <ul>
-    <li>EC立ち上げ・運営で年商1億円規模</li>
-    <li>既存事業の改善・V字回復支援</li>
-    <li>検索流入改善、CV導線改善、記事設計支援</li>
-  </ul>
+      <section class="card">
+        <h2>所在地・連絡先</h2>
+        <p class="contact">所在地：北海道札幌市</p>
+        <p class="contact">Email：<a href="mailto:info@matsumoto-seo.com">info@matsumoto-seo.com</a></p>
+      </section>
 
-  <h2>連絡先</h2>
-  <p>Email: info@matsumoto-seo.com</p>
+      <section class="card card-wide">
+        <h2>実績概要</h2>
+        <ul>
+          <li>EC立ち上げ・運営で年商1億円規模</li>
+          <li>既存事業の改善・V字回復支援</li>
+          <li>検索流入改善、CV導線改善、記事設計支援</li>
+        </ul>
+      </section>
 
-  <h2>所在地</h2>
-  <p>北海道札幌市</p>
+      <section class="card card-wide">
+        <h2>補足</h2>
+        <p class="small">
+          本サイトは、プロフィール・実績概要のご案内を目的とした簡易ページです。
+        </p>
+      </section>
+    </section>
+
+    <p class="footer">© Matsumoto SEO</p>
+  </main>
 </body>
 </html>
