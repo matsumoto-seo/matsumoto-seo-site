@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松本知 | SEOコンサルタント</title>
   <meta name="description" content="松本知のプロフィール・実績概要。SEO設計、コンテンツ改善、Web集客改善。">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <style>
     :root {
       --bg: #f7f7f5;
@@ -105,8 +105,8 @@
     }
 
     h3 {
-      margin: 0 0 8px;
-      font-size: 18px;
+      margin: 0 0 10px;
+      font-size: 19px;
       line-height: 1.5;
     }
 
@@ -127,20 +127,24 @@
       margin-top: 10px;
     }
 
-    .achievements {
-      display: grid;
-      gap: 16px;
+    .results-group + .results-group {
+      margin-top: 28px;
     }
 
-    .achievement-item {
+    .results-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .result-item {
       padding: 18px;
       border: 1px solid var(--line);
       background: #fcfcfb;
     }
 
-    .achievement-text {
-      font-size: 15px;
-      color: var(--text);
+    .result-item strong {
+      display: inline-block;
+      margin-bottom: 4px;
     }
 
     .sub {
@@ -199,7 +203,7 @@
   <main class="wrap">
     <section class="hero">
       <div class="photo-box">
-        <img src="profile-photo2.png" alt="松本知" class="photo">
+        <img src="/profile-photo2.png" alt="松本知" class="photo">
       </div>
 
       <div>
@@ -210,7 +214,7 @@
           広告依存の集客構造の見直しや、検索流入から問い合わせ導線までの改善支援を行っています。
         </p>
         <p class="pdf-link">
-          <a href="profile.pdf" target="_blank" rel="noopener noreferrer">プロフィールPDFを見る</a>
+          <a href="/profile.pdf" target="_blank" rel="noopener noreferrer">プロフィールPDFを見る</a>
         </p>
       </div>
     </section>
@@ -235,26 +239,37 @@
       </section>
 
       <section class="card card-wide">
-        <h2>実績概要</h2>
-        <div class="achievements">
-          <div class="achievement-item">
-            <h3>EC立ち上げ・運営</h3>
-            <p class="achievement-text">EC立ち上げ・運営で年商1億円規模。</p>
-          </div>
+        <h2>実績</h2>
 
-          <div class="achievement-item">
-            <h3>住宅・地域サービス系</h3>
-            <p class="achievement-text">SEO設計・導線改善により、1年でCV約10倍規模まで改善したケースあり。</p>
+        <div class="results-group">
+          <h3>自社事業</h3>
+          <div class="results-list">
+            <div class="result-item">
+              <strong>EC立ち上げ・運営</strong><br>
+              自社ECの立ち上げ・運営により、月商1億円規模まで成長。
+            </div>
+            <div class="result-item">
+              <strong>既存事業の改善</strong><br>
+              既存事業の改善支援により、V字回復を実現。
+            </div>
           </div>
+        </div>
 
-          <div class="achievement-item">
-            <h3>既存事業の改善支援</h3>
-            <p class="achievement-text">既存事業の改善支援により、V字回復を実現したケースあり。</p>
-          </div>
-
-          <div class="achievement-item">
-            <h3>検索流入・CV導線改善</h3>
-            <p class="achievement-text">検索流入改善、CV導線改善、記事設計支援を継続的に実施。</p>
+        <div class="results-group">
+          <h3>顧客事業</h3>
+          <div class="results-list">
+            <div class="result-item">
+              <strong>住宅・地域サービス系</strong><br>
+              SEO設計・導線改善により、季節要因による売上の谷を抑え、前年同期比3倍のCVを達成。
+            </div>
+            <div class="result-item">
+              <strong>医療機器開発・ローカル販売</strong><br>
+              キーワード戦略により、1年でCV10倍を達成。
+            </div>
+            <div class="result-item">
+              <strong>整体・マッサージ店</strong><br>
+              ブログ戦略により、CV2倍を達成。
+            </div>
           </div>
         </div>
       </section>
