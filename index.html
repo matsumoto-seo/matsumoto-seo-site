@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松本知 | SEOコンサルタント</title>
-  <meta name="description" content="松本のプロフィール・実績概要。SEO設計、コンテンツ改善、Web集客改善。">
+  <meta name="description" content="松本知のプロフィール・実績概要。SEO設計、コンテンツ改善、Web集客改善。">
+  <link rel="icon" type="image/png" href="favicon.png">
   <style>
     :root {
       --bg: #f7f7f5;
@@ -13,6 +14,7 @@
       --sub: #666666;
       --line: #e5e5e5;
       --accent: #222222;
+      --max: 980px;
     }
 
     * {
@@ -28,27 +30,44 @@
     }
 
     .wrap {
-      max-width: 920px;
+      max-width: var(--max);
       margin: 0 auto;
-      padding: 56px 20px 80px;
+      padding: 48px 20px 80px;
     }
 
     .hero {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 32px;
+      align-items: center;
       background: var(--card);
       border: 1px solid var(--line);
-      padding: 40px 32px;
+      padding: 32px;
       margin-bottom: 24px;
     }
 
+    .photo-box {
+      width: 100%;
+    }
+
+    .photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: #f0f0f0;
+    }
+
     .name {
-      margin: 0 0 10px;
-      font-size: 40px;
+      margin: 0 0 8px;
+      font-size: 42px;
       line-height: 1.2;
       letter-spacing: 0.02em;
     }
 
     .title {
-      margin: 0 0 20px;
+      margin: 0 0 18px;
       font-size: 18px;
       color: var(--sub);
     }
@@ -56,6 +75,11 @@
     .lead {
       margin: 0;
       font-size: 16px;
+    }
+
+    .pdf-link {
+      margin-top: 18px;
+      font-size: 15px;
     }
 
     .grid {
@@ -76,8 +100,18 @@
 
     h2 {
       margin: 0 0 18px;
-      font-size: 24px;
+      font-size: 26px;
       line-height: 1.4;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    p {
+      margin: 0;
     }
 
     ul {
@@ -86,16 +120,32 @@
     }
 
     li + li {
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
-    .small {
+    .contact-line + .contact-line {
+      margin-top: 10px;
+    }
+
+    .achievements {
+      display: grid;
+      gap: 16px;
+    }
+
+    .achievement-item {
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: #fcfcfb;
+    }
+
+    .achievement-text {
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .sub {
       color: var(--sub);
       font-size: 14px;
-    }
-
-    .contact {
-      margin-top: 8px;
     }
 
     a {
@@ -111,23 +161,32 @@
       text-align: center;
     }
 
-    @media (max-width: 740px) {
+    @media (max-width: 780px) {
       .wrap {
         padding: 28px 14px 56px;
       }
 
-      .hero,
-      .card {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
         padding: 24px 18px;
       }
 
+      .photo-box {
+        max-width: 220px;
+      }
+
       .name {
-        font-size: 32px;
+        font-size: 34px;
       }
 
       .grid {
         grid-template-columns: 1fr;
         gap: 16px;
+      }
+
+      .card {
+        padding: 24px 18px;
       }
 
       .card-wide {
@@ -139,12 +198,21 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <h1 class="name">松本知</h1>
-      <p class="title">SEOコンサルタント</p>
-      <p class="lead">
-        SEO設計、コンテンツ改善、Web集客改善を中心に、
-        広告依存の集客構造の見直しや、検索流入から問い合わせ導線までの改善支援を行っています。
-      </p>
+      <div class="photo-box">
+        <img src="profile-photo2.png" alt="松本知" class="photo">
+      </div>
+
+      <div>
+        <h1 class="name">松本知</h1>
+        <p class="title">SEOコンサルタント</p>
+        <p class="lead">
+          SEO設計、コンテンツ改善、Web集客改善を中心に、
+          広告依存の集客構造の見直しや、検索流入から問い合わせ導線までの改善支援を行っています。
+        </p>
+        <p class="pdf-link">
+          <a href="profile.pdf" target="_blank" rel="noopener noreferrer">プロフィールPDFを見る</a>
+        </p>
+      </div>
     </section>
 
     <section class="grid">
@@ -160,23 +228,41 @@
 
       <section class="card">
         <h2>所在地・連絡先</h2>
-        <p class="contact">所在地：北海道札幌市</p>
-        <p class="contact">Email：<a href="mailto:info@matsumoto-seo.com">info@matsumoto-seo.com</a></p>
+        <p class="contact-line">所在地：北海道札幌市</p>
+        <p class="contact-line">
+          Email：<a href="mailto:info@matsumoto-seo.com">info@matsumoto-seo.com</a>
+        </p>
       </section>
 
       <section class="card card-wide">
         <h2>実績概要</h2>
-        <ul>
-          <li>EC立ち上げ・運営で年商1億円規模</li>
-          <li>既存事業の改善・V字回復支援</li>
-          <li>検索流入改善、CV導線改善、記事設計支援</li>
-        </ul>
+        <div class="achievements">
+          <div class="achievement-item">
+            <h3>EC立ち上げ・運営</h3>
+            <p class="achievement-text">EC立ち上げ・運営で年商1億円規模。</p>
+          </div>
+
+          <div class="achievement-item">
+            <h3>住宅・地域サービス系</h3>
+            <p class="achievement-text">SEO設計・導線改善により、1年でCV約10倍規模まで改善したケースあり。</p>
+          </div>
+
+          <div class="achievement-item">
+            <h3>既存事業の改善支援</h3>
+            <p class="achievement-text">既存事業の改善支援により、V字回復を実現したケースあり。</p>
+          </div>
+
+          <div class="achievement-item">
+            <h3>検索流入・CV導線改善</h3>
+            <p class="achievement-text">検索流入改善、CV導線改善、記事設計支援を継続的に実施。</p>
+          </div>
+        </div>
       </section>
 
       <section class="card card-wide">
         <h2>補足</h2>
-        <p class="small">
-          本サイトは、プロフィール・実績概要のご案内を目的とした簡易ページです。
+        <p class="sub">
+          詳細な経歴・実績概要は、プロフィールPDFにも掲載しています。
         </p>
       </section>
     </section>
