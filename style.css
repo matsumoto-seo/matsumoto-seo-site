@@ -290,6 +290,6 @@ font-size: 18px;
 }
 }
 
-article.card.card-wide {
+.card-wide + .card-wide {
   margin-top: 24px;
 }
