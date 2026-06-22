@@ -290,6 +290,10 @@ font-size: 18px;
 }
 }
 
-.card-wide + .card-wide {
+.blog-link-card {
+  margin-top: 24px;
+}
+
+.article-card {
   margin-top: 24px;
 }
