@@ -289,3 +289,7 @@ justify-content: flex-start;
 font-size: 18px;
 }
 }
+
+article.card.card-wide {
+  margin-top: 24px;
+}
